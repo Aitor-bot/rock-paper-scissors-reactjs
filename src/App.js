@@ -1,7 +1,7 @@
 import './App.css';
-import WebcamPlayer1 from "./components/WebCamPlayer1";
-import WebcamPlayer2 from "./components/WebcamPlayer2";
+import WebcamPlayer from "./components/WebcamPlayer";
 import Flexbox from 'flexbox-react';
+import PlayerCards from './components/PlayerCards';
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
         <h1>Harria - Papera - Guraizea</h1>
       </Flexbox>
       <Flexbox justifyContent="space-between" marginLeft="3%" marginRight="3%">   
-        <WebcamPlayer1></WebcamPlayer1>
+        <WebcamPlayer></WebcamPlayer>
+        <PlayerCards></PlayerCards>
       </Flexbox>
 
 

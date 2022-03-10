@@ -3,7 +3,7 @@ import Webcam from "react-webcam";
 import '../App.css'
 import { Button } from "@mui/material";
 
-const WebcamPlayer2 = () => {
+const WebcamPlayer = () => {
     const webcamRef = React.useRef(null);
     const [image, setImage] = React.useState(null);
 
@@ -27,7 +27,7 @@ const WebcamPlayer2 = () => {
             />
         </div>
         ) : (
-            <img src={image}/>
+            <img src={image} alt="gure argazkia"/>
         )}
             <br />
         <Button variant="outlined" onClick={() => (!image ? capture() : setImage(null))}>
@@ -39,5 +39,5 @@ const WebcamPlayer2 = () => {
 };
 
 
-export default WebcamPlayer2;
+export default WebcamPlayer;
 
