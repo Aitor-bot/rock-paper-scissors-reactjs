@@ -70,3 +70,21 @@ video,
 button {
   display: block;
 }
+
+/* --- Home.js --- */
+.background {
+  height: 100%;
+  width: 100%;
+}
+
+/* --- HomeBtns.js --- */
+.home-btns {
+  width: 30%;
+  margin-top: -25%;
+  margin-left: 30%;
+}
+
+.homeBtn {
+  width: 240%;
+}
+
