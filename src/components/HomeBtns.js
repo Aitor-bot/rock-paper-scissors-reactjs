@@ -1,13 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import styled from 'styled-components';
-import '../App.css'
+import '../App.css';
 
 
 function HomeBtns() {
+  let navigate = useNavigate();
+
   return (
     <div className='home-btns'>
-      <button class="button">PLAY GAME!</button>
+      <button 
+        class="button" 
+        onClick={()  => {
+          navigate('/game');
+        }}
+        >
+          PLAY GAME!</button>
     </div>
   )
 }

@@ -1,38 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './screens/Home';
 import Game from './screens/Game';
+import Error from './screens/Error';
 import './App.css';
-
-//import WebcamPlayer from "./components/WebcamPlayer";
-//import Flexbox from 'flexbox-react';
-//import PlayerCards from './components/PlayerCards';
 
 function App() {
   return (
-    <div className='App'>
-      <div className='home-section'>
-        <Home />
-      </div>
-      <div className='game-section'>
-        <Game />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/game' element={<Game />} />
 
-    /*
-    <Flexbox flexDirection="column">
-      <Flexbox element="header" height="100px" justifyContent="center" >
-        <h1>Harria - Papera - Guraizea</h1>
-      </Flexbox>
-      <Flexbox justifyContent="space-between" marginLeft="3%" marginRight="3%">   
-        <WebcamPlayer></WebcamPlayer>
-        <PlayerCards></PlayerCards>
-      </Flexbox>
-
-
-    
-    </Flexbox>
-    */
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
