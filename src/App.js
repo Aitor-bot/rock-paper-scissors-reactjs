@@ -5,8 +5,6 @@ import Home from './screens/Home';
 import Game from './screens/Game';
 import Error from './screens/Error';
 import './App.css';
-import WebcamPlayer1 from "./components/WebCamPlayer1";
-import Flexbox from 'flexbox-react';
 
 function App() {
   return (

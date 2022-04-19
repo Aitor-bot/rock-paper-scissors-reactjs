@@ -1,11 +1,9 @@
 import React from 'react'
+import WebcamPlayer from "../components/WebcamPlayer"
 
 function Game() {
   return (
-    <div>
-      <h1>This is the game page</h1>
-      <button>Hello</button>
-    </div>
+    <WebcamPlayer></WebcamPlayer>
   )
 }
 
