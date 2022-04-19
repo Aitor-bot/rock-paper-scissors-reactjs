@@ -1,6 +1,5 @@
 import './App.css';
 import WebcamPlayer1 from "./components/WebCamPlayer1";
-import WebcamPlayer2 from "./components/WebcamPlayer2";
 import Flexbox from 'flexbox-react';
 
 function App() {
