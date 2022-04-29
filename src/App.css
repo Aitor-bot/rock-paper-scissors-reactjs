@@ -93,6 +93,13 @@ button {
   transform: translate(-50%, -50%);  
 }
 
+@media screen and (max-width: 576px) {
+  .main {
+    background: url("../src/assets/images/homeimage-responsive.png") no-repeat center;
+    background-size: cover;
+  }
+}
+
 
 /* <------------------ HomeBtns.js ------------------> */
 
@@ -154,6 +161,29 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
     opacity: 0;
   }
 }
+
+/* <------------------ Game.js ------------------> */
+.game-btn {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
 
 /* <------------------ Error.js ------------------> */
 .errorpage {

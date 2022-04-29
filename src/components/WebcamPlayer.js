@@ -30,6 +30,7 @@ const WebcamPlayer = () => {
             <img src={image} alt="gure argazkia"/>
         )}
             <br />
+        <button className="game-btn"></button>
         <Button variant="outlined" onClick={() => (!image ? capture() : setImage(null))}>
             {!image ? "Argazkia atera" : "Beste argazki bat atera"}
         </Button> <br></br><br></br>
@@ -38,6 +39,4 @@ const WebcamPlayer = () => {
     );
 };
 
-
 export default WebcamPlayer;
-
