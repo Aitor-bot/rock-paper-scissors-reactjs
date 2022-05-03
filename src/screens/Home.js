@@ -4,8 +4,8 @@ import '../App.css';
 
 function Home() {
   return (
-    <div class="main">
-      <div class="container">
+    <div className="main">
+      <div className="container">
           <HomeBtns />
       </div>
     </div>

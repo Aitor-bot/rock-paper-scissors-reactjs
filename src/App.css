@@ -265,8 +265,15 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 .opponent-choice {
   width: 640px;
   height: 480px;
-  background: url("../src/assets/images/opponent-image.png") no-repeat center;
-}
+
+ }
+
+ .winner-ph {
+   font-size: xx-large;
+   text-align: left;
+   margin-right: 100px;
+ }
+ 
 
 /* <------------------ Error.js ------------------> */
 .errorpage {

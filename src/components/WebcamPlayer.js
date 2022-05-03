@@ -1,13 +1,12 @@
 import React from "react";
 import Webcam from "react-webcam";
 import '../App.css'
+import OpponentChoice from "./OpponentChoice"
 
 const WebcamPlayer = () => {
     const webcamRef = React.useRef(null);
     const [image, setImage] = React.useState(null);
 
-    console.log("ESTA ES LA IMAGEN")
-    console.log(image)
 
     const capture = React.useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
@@ -31,8 +30,7 @@ const WebcamPlayer = () => {
             <br />
 
         <div className="multi-button" >
-            <button className="take-pic" onClick={() => (!image ? capture() : setImage(null))}>{!image ? <i class="fa-solid fa-camera"></i> : <i class="fa-solid fa-arrows-rotate"></i>}</button>
-            <button className="send-pic"><i class="fa-solid fa-paper-plane"></i></button>
+            <button className="take-pic" onClick={() => (!image ? capture() : setImage(null))}>{!image ? <i className="fa-solid fa-camera"></i> : <i className="fa-solid fa-arrows-rotate"></i>}</button>            
         </div>        
     </div>
     );
