@@ -2,7 +2,9 @@ import React from 'react'
 
 function OpponentChoice() {
   return (
-    <div>OpponentChoice</div>
+    <div className='opponent-choice'>
+      
+    </div>
   )
 }
 

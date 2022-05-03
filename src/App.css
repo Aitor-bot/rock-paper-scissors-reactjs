@@ -154,6 +154,65 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
     opacity: 0;
   }
 }
+/* <------------------ Game.js ------------------> */
+
+.vs {
+  padding-top: 200%;
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-size: 5em;
+  font-weight: 900;
+  line-height: 1;
+}
+.vs:hover {
+  animation-play-state: paused;
+}
+
+@keyframes text-shadow {
+  0% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #0c2ffb, 
+          0 0 0 #2cfcfd, 
+          0 0 0 #fb203b, 
+          0 0 0 #fefc4b;
+  }
+
+  20% {  
+      transform: translateY(-1em);
+      text-shadow: 
+          0 0.125em 0 #0c2ffb, 
+          0 0.25em 0 #2cfcfd, 
+          0 -0.125em 0 #fb203b, 
+          0 -0.25em 0 #fefc4b;
+  }
+
+  40% {  
+      transform: translateY(0.5em);
+      text-shadow: 
+          0 -0.0625em 0 #0c2ffb, 
+          0 -0.125em 0 #2cfcfd, 
+          0 0.0625em 0 #fb203b, 
+          0 0.125em 0 #fefc4b;
+  }
+  
+ 60% {
+      transform: translateY(-0.25em);
+      text-shadow: 
+          0 0.03125em 0 #0c2ffb, 
+          0 0.0625em 0 #2cfcfd, 
+          0 -0.03125em 0 #fb203b, 
+          0 -0.0625em 0 #fefc4b;
+  }
+
+  80% {  
+      transform: translateY(0);
+      text-shadow: 
+          0 0 0 #0c2ffb, 
+          0 0 0 #2cfcfd, 
+          0 0 0 #fb203b, 
+          0 0 0 #fefc4b;
+  }
+}
 
 /* <------------------ WebcamPlayer.js ------------------> */
 .multi-button button {
@@ -202,6 +261,12 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   left: 0px;
 }
 
+/* <------------------ OpponentChoice.js ------------------> */
+.opponent-choice {
+  width: 640px;
+  height: 480px;
+  background: url("../src/assets/images/opponent-image.png") no-repeat center;
+}
 
 /* <------------------ Error.js ------------------> */
 .errorpage {
