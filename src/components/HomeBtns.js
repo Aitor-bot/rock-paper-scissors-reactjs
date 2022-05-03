@@ -10,7 +10,7 @@ function HomeBtns() {
   return (
     <div className='home-btns'>
       <button 
-        class="home-btn" 
+        class="btn home-btn" 
         onClick={()  => {
           navigate('/game');
         }}

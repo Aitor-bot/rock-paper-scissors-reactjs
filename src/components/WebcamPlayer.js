@@ -1,7 +1,6 @@
 import React from "react";
 import Webcam from "react-webcam";
 import '../App.css'
-import { Button } from "@mui/material";
 
 const WebcamPlayer = () => {
     const webcamRef = React.useRef(null);
@@ -30,11 +29,11 @@ const WebcamPlayer = () => {
             <img src={image} alt="gure argazkia"/>
         )}
             <br />
-        <button className="game-btn"></button>
-        <Button variant="outlined" onClick={() => (!image ? capture() : setImage(null))}>
-            {!image ? "Argazkia atera" : "Beste argazki bat atera"}
-        </Button> <br></br><br></br>
-        <Button variant="contained" color="success"> Aukera bidali</Button>
+
+        <div className="multi-button" >
+            <button className="take-pic" onClick={() => (!image ? capture() : setImage(null))}>{!image ? <i class="fa-solid fa-camera"></i> : <i class="fa-solid fa-arrows-rotate"></i>}</button>
+            <button className="send-pic"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>        
     </div>
     );
 };
