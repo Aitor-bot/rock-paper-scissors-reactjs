@@ -8,10 +8,15 @@ const WebcamPlayer = () => {
     const [image, setImage] = React.useState(null);
 
 
-    const capture = React.useCallback(() => {
-        const imageSrc = webcamRef.current.getScreenshot();
-        setImage(imageSrc);
+const capture = React.useCallback(() => {
+    const imageSrc = webcamRef.current.getScreenshot();
+    setImage(imageSrc);
     }, [webcamRef]);
+
+const onMediaError = (error) => {
+    alert("La cámara no tiene permisos")
+    }
+
 
     return (
         <div>
@@ -22,7 +27,7 @@ const WebcamPlayer = () => {
                 ref={webcamRef}
                 screenshotFormat="image/jpeg"
                 mirrored="true"
-            />
+                onUserMediaError={(error) => onMediaError(error)} /> 
         </div>
         ) : (
             <img src={image} alt="gure argazkia"/>
